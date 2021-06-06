@@ -1,0 +1,35 @@
+<!--#Desc: Creates web page that allows to create a library books -->
+<!--#Author: Anthony Narlock -->
+<!--#Prof: Lisa Minogue -->
+<!--#Date: 12/1/2020 -->
+
+<!--#Beginning of HTML -->
+<!doctype html>
+<head>
+<title>Library - Book Information</title>
+</head>
+
+<!--#Body -->
+<body>
+<h1>Book Information</h1>
+
+<!--#Form -->
+<form action="/cgi-bin/add_book.py" method="post">
+<label>Title:</label>
+<input type = "text" name = "title"><br>
+<label>Author:</label>
+<input type = "text" name = "author"><br>
+<label>Year Published:</label>
+<input type = "text" name = "year_published"><br>
+<label>Pages:</label>
+<input type = "text" name = "pages"><br>
+<p/>What is the genre?<br/>
+<input name="genre" value="computing" type="radio">Computing<br/>
+<input name="genre" value="mystery" type="radio">Mystery<br/>
+<input name="genre" value="fantasy" type="radio">Fantasy/Sci-Fi<br/>
+<input name="genre" value="nonfic" type="radio">Non-Fiction<br/>
+<input name="genre" value="fic" type="radio">Fiction<br/>
+<input type="submit" value = "Save"></form>
+</body>
+
+</html>
